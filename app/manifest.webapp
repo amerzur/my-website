@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Angela Igreja",
+  "launch_path": "/index.html",
+  "description": "My personal website.",
+  "icons": {
+    "128": "/images/touch/icon-256x256.png"
+  },
+  "developer": {
+    "name": "",
+    "url": ""
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": Angela Igreja",
+      "description": "My personal website.""
+    }
+  }
+}

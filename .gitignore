@@ -1,0 +1,12 @@
+.idea/
+*.css.map
+*.sass-cache/
+*.DS_Store
+
+#compiled css
+*main.css
+.tmp
+node_modules
+bower_components
+dist
+distRepo
