@@ -32,6 +32,8 @@ var ani= anime({
 });
 
 ani.speed = 1;
+
+
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
@@ -53,8 +55,51 @@ ani.speed = 1;
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
+         
     })
+ 
+  $(".navbar").on("activate.bs.scrollspy", function(){
+      debugger;
+          var x = $(".nav li.active > a").text();
+        
+          if(x==" Skills"){
+anime({
+  targets: '.skill[data-skill="html"]',
+   
+  width: '450',  
+  borderRadius: 8,
+  duration: 2000,
+  loop:false 
+});
+anime({
+  targets: '.skill[data-skill="javascript"]',
+   
+  width: '500',  
+   borderRadius: 8,
+  duration: 2000,
+  loop:false 
+});
+anime({
+  targets: '.skill[data-skill="css"]',
+   
+  width: '430', 
+   borderRadius: 8,
+  duration: 2000,
+  loop:false 
+});
+anime({
+  targets: '.skill[data-skill="wordpress"]',
+    
+  width: '400',  
+   borderRadius: 8,
+  duration: 2000,
+  loop:false 
+});
+          }
+                 
 
+    })
+ 
     // Fit Text Plugin for Main Header
     $("h1").fitText(
         1.2, {
