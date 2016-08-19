@@ -56,13 +56,13 @@ ani.speed = 1;
         target: '.navbar-fixed-top',
         offset: 51
          
-    })
+    });
  
   $(".navbar").on("activate.bs.scrollspy", function(){
       debugger;
           var x = $(".nav li.active > a").text();
         
-          if(x==" Skills"){
+          if(x=="Skills"){
 anime({
   targets: '.skill[data-skill="html"]',
    

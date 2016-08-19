@@ -27,5 +27,14 @@
     "wowjs":"~1.1.2",
      "please-wait": "*" ,
      "animejs":"*"
-  }
+  },
+  "overrides": {
+  "bootstrap": {
+    "main": [
+      "dist/js/bootstrap.js",
+      "dist/css/bootstrap.css",
+      "less/bootstrap.less"
+        ]
+    }
+}
 }
