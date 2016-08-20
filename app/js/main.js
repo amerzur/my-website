@@ -12,8 +12,9 @@
    var loadingScreen = pleaseWait({
                 logo: "../img/loading.png",
                 backgroundColor: '#b07bb1',
-                loadingHtml: "<div class='row animation-container'> <div class='col-sm-2 col-sm-offset-3'> <div class=' animation blue'></div><div class=' animation red'></div><div class=' animation green'></div></div></div> "
+                loadingHtml: "<div class='row animation-container'> <div class='col-xs-2 col-xs-offset-5 animation-parent '> <div class=' animation blue'></div><div class=' animation red'></div><div class=' animation green'></div></div></div> "
                });
+ 
 
 setTimeout(function(){
 loadingScreen.finish();
@@ -22,16 +23,27 @@ loadingScreen.finish();
 new WOW().init();
 var ani= anime({
   targets: '.animation',
- translateX: function() { return 60+'rem'; }
+ translateY: function() { return -15+'rem'; }
   // translateY: function() { return anime.random(-6, 6) + 'rem'; }
   ,delay: function(el, index) {
-    return index * 50;
+    return index * 80;
   },
   direction: 'alternate',
-  loop: true
+  loop: true,
+  duration: 800
 });
-
-ani.speed = 1;
+// anime({
+//   targets: '.animation',
+//  translateY: function() { return 10+'rem'; }
+//   // translateY: function() { return anime.random(-6, 6) + 'rem'; }
+//   ,delay: function(el, index) {
+//     return index * 50;
+//   },
+//   direction: 'alternate',
+//   loop: true,
+//   duration: 1000
+// });
+//ani.speed = 1;
 
 
     // Offset for Main Navigation
@@ -59,40 +71,38 @@ ani.speed = 1;
     });
  
   $(".navbar").on("activate.bs.scrollspy", function(){
-      debugger;
+    
           var x = $(".nav li.active > a").text();
         
           if(x=="Skills"){
 anime({
   targets: '.skill[data-skill="html"]',
-   
-  width: '450',  
+    delay: 80,
+  width: '80%',  
   borderRadius: 8,
-  duration: 2000,
+  duration: 1000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="javascript"]',
-   
-  width: '500',  
+   easing:'easeOutElastic',
+  width: '85%',  
    borderRadius: 8,
   duration: 2000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="css"]',
-   
-  width: '430', 
+  width: '65%', 
    borderRadius: 8,
-  duration: 2000,
+  duration: 3000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="wordpress"]',
-    
-  width: '400',  
+  width: '60%',  
    borderRadius: 8,
-  duration: 2000,
+  duration: 2500,
   loop:false 
 });
           }

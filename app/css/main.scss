@@ -20,11 +20,7 @@ hr {
 hr.light {
     border-color: $white;;
 }
-.animation-container{
-    position:relative; 
-        top: 50%;
-    
-}
+
 .skillbar{
         width: 100%;
     height: 40px;
@@ -35,10 +31,10 @@ hr.light {
     box-sizing: border-box;
 }
 .skill{
-width:0px;
+    width:0%;
     position: relative;
     height: 32px;
-    background-color: #7a0045;
+    background-color: $accentDark;
     color:white;
     .title{
         font-size: 14px;
@@ -61,12 +57,25 @@ width:0px;
 .modal-title{
    color:white; 
 }
+.animation-container{
+    position:relative; 
+
+        top: 50%;
+}
+.animation-parent{
+   /* display:flex; */
+}
+ 
 div.animation {
+float:left;
    width: 2.5em;
   height: 2.5em;
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 50%;
+  margin-left:1em;
+
+
 }
 .blue {
     background-color: #206EFF;
@@ -176,7 +185,7 @@ section {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: $accent;
+        color: $accentDark;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -246,11 +255,11 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 500;
-    color: #571658;
+    color: $accentDark;
 }
 
 header .header-content .header-content-inner h2 {
-    color: #571658;
+    color: $accentDark;
     font-weight: 500;
 }
 
