@@ -23,29 +23,19 @@ loadingScreen.finish();
 new WOW().init();
 var ani= anime({
   targets: '.animation',
- translateY: function() { return -15+'rem'; }
+ translateY: {
+  value:-15+'rem',
+ easing: 'easeOutBack'
+ }  
   // translateY: function() { return anime.random(-6, 6) + 'rem'; }
   ,delay: function(el, index) {
-    return index * 80;
+    return index * 80 ;
   },
   direction: 'alternate',
   loop: true,
-  duration: 800
+  duration: 500 
 });
-// anime({
-//   targets: '.animation',
-//  translateY: function() { return 10+'rem'; }
-//   // translateY: function() { return anime.random(-6, 6) + 'rem'; }
-//   ,delay: function(el, index) {
-//     return index * 50;
-//   },
-//   direction: 'alternate',
-//   loop: true,
-//   duration: 1000
-// });
-//ani.speed = 1;
-
-
+ 
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
