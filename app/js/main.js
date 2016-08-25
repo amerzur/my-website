@@ -85,14 +85,14 @@ anime({
 });
 anime({
   targets: '.skill[data-skill="css"]',
-  width: '65%', 
+  width: '70%', 
    borderRadius: 8,
   duration: 3000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="wordpress"]',
-  width: '60%',  
+  width: '65%',  
    borderRadius: 8,
   duration: 2500,
   loop:false 
