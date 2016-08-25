@@ -8,7 +8,7 @@
         console.log("x" +x);
         console.log("y" +y);
     });
-
+var skillsNotRenderd=true; ; 
    var loadingScreen = pleaseWait({
                 logo: "../img/loading.png",
                 backgroundColor: '#b07bb1',
@@ -64,7 +64,9 @@ var ani= anime({
     
           var x = $(".nav li.active > a").text();
         
-          if(x=="Skills"){
+  if(x=="Skills" && skillsNotRenderd){
+
+    skillsNotRenderd=false; 
 anime({
   targets: '.skill[data-skill="html"]',
     delay: 80,
