@@ -20,6 +20,9 @@ hr {
 hr.light {
     border-color: $white;;
 }
+.skill-li{
+    list-style:none; 
+}
 .skill-img{
 position:absolute;
 background-image: url(../img/spirit-skills.png); 
@@ -56,23 +59,23 @@ background-image: url(../img/spirit-skills.png);
     height: 42px;
     background-color: $accent;
     color:white;
-    .title{
+        .title{
+            font-size: 14px;
+        font-weight: 400;
+        padding-left: 13%;
+        line-height: 40px;
+        text-transform: uppercase;
+       
+        }
+        .count{
+            position: absolute;
+        top: 0;
+        right: 12px;
+        line-height: 40px;
         font-size: 14px;
-    font-weight: 400;
-    padding-left: 36px;
-    line-height: 40px;
-    text-transform: uppercase;
-   
-    }
-    .count{
-        position: absolute;
-    top: 0;
-    right: 12px;
-    line-height: 40px;
-    font-size: 14px;
-    font-weight: 400;
+        font-weight: 400;
 
-    }
+        }
 }
 .modal-title{
    color:white; 
