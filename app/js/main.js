@@ -71,7 +71,7 @@ anime({
   targets: '.skill[data-skill="html"]',
     delay: 80,
   width: '80%',  
-  borderRadius: 8,
+  borderRadius: '8px',
   duration: 1000,
   loop:false 
 });
@@ -79,21 +79,21 @@ anime({
   targets: '.skill[data-skill="javascript"]',
    easing:'easeOutElastic',
   width: '85%',  
-   borderRadius: 8,
+   borderRadius: '8px',
   duration: 2000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="css"]',
   width: '70%', 
-   borderRadius: 8,
+   borderRadius: '8px',
   duration: 3000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="wordpress"]',
   width: '65%',  
-   borderRadius: 8,
+   borderRadius: '8px',
   duration: 2500,
   loop:false 
 });
