@@ -9,10 +9,6 @@ cache: true
 
 archive: true
 
-# The password for github
-env:
-  global:
-    - secure: WmnrVgyIRnzL0rIyTHyfNlx64Nb/VCOGwmJu3sj1LRLyvOjLpXxQdmUb6xTtVxpdZK3NshZmfbmOOOAMoDiZ4VnFn6KlytquUGNZLxYxSSaqD/AYrFtttTeR95RS0YW4PRDdgNf9N6F60wiXkkrOick4n2hBzx/ZFT6FjZbaMGZKQWHNCTZLFrHCdbJA/RluO8z7F5fetkUvZXNPSov5gNzPM5gYTqojj0fUKzNk/iBtubsBrk61VHizSu2w7cAG153cRae1AxpRlbAr25N7TLXdVO9tnZosa3r9vYzljUT7rhHQmLra2uf0yD7hD45ApdWr4dIxZwMwycpIpin2kg==
 
 # install bower components
 before_script:
@@ -30,4 +26,4 @@ after_success:
 notifications:
    email:
        recipients:
-          - angel.igreja@gmail.com
+          - amera7md@gmail.com
