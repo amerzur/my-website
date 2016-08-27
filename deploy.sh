@@ -18,7 +18,7 @@ if [ ! -d "$DIST_DIR" -o ! "$(ls -A $DIST_DIR)" ]; then
 fi
 echo 'Saving built app to git repo.'
 rm -rf "$DIST_REPO"
-git clone https://${OAUTH_TOKEN}@github.com/angelaigreja/angelaigreja.github.io.git "$DIST_REPO" || { echo 'Failed to get the repository' ; exit 1; }
+git clone https://${OAUTH_TOKEN}@github.com/amera7md/amera7md.github.io.git "$DIST_REPO" || { echo 'Failed to get the repository' ; exit 1; }
 echo 'Clearing the dist repo.'
 cd "$DIST_REPO"
 git rm -r *
