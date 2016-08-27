@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angelaigreja/my-website.git"
+    "url": "git+https://github.com/amera7md/my-website.git"
   },
   "keywords": [
     "website"
@@ -16,9 +16,9 @@
   "author": "Ângela Igreja",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angelaigreja/my-website/issues"
+    "url": "https://github.com/amera7md/my-website/issues"
   },
-  "homepage": "https://github.com/angelaigreja/my-website#readme",
+  "homepage": "https://github.com/amera7md/my-website#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",

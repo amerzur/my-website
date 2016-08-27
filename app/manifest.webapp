@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "Angela Igreja",
+  "name": "Amer Zureigat",
   "launch_path": "/index.html",
   "description": "My personal website.",
   "icons": {
@@ -18,7 +18,7 @@
   },
   "locales": {
     "en": {
-      "name": Angela Igreja",
+      "name": Amer Zuriegat",
       "description": "My personal website.""
     }
   }
