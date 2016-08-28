@@ -9,21 +9,56 @@
         console.log("y" +y);
     });
  window.onload =function(){
+  
   //animation for the three balls 
-var ani= anime({
-  targets: '.animation',
+  
+  var ballsAni= anime({
+  targets: '.animation-parent .animation',
  translateY: {
   value:-15+'rem',
  easing: 'easeOutBack'
  }  
-  // translateY: function() { return anime.random(-6, 6) + 'rem'; }
-  ,delay: function(el, index) {
-    return index * 80 ;
+   ,delay: function(el, index) {
+    return 80*index ;
   },
   direction: 'alternate',
   loop: true,
   duration: 500 
 });
+
+  // sun & moon animation 
+
+var sunAni= anime({
+  targets: '#moon',
+ translateY: {
+  value:-20+'rem',
+ easing: 'easeOutBack'
+ }  
+  ,delay: function(el, index) {
+    return 1000 ;
+  },
+  direction: 'alternate',
+  loop: true,
+  duration: 500 
+});
+var moonAni = anime({
+  targets: '#sun',
+ translateY: {
+  value:-20+'rem',
+ easing: 'easeOutBack'
+ } , delay: function(el, index) {
+    return 1000 ;
+  },
+  direction: 'alternate',
+  loop: true,
+  duration: 500  ,
+  autoplay:false
+});
+debugger;
+ setTimeout(function(){
+  moonAni.play();
+ },4000);
+
  
    var waves = new SineWaves({
   // Canvas Element

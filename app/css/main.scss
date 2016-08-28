@@ -111,8 +111,16 @@ background-image: url(../img/spirit-skills.png);
 .animation-parent{
    /* display:flex; */
 }
- 
-div.animation {
+ .day{
+ float:left;
+   width: 2.5em;
+  height: 2.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50%;
+  margin-left:1em;
+ }
+div.animation{
 float:left;
    width: 2.5em;
   height: 2.5em;
@@ -120,8 +128,12 @@ float:left;
   margin-bottom: auto;
   border-radius: 50%;
   margin-left:1em;
-
-
+}
+.yellow{
+    background-color:yellow;
+}
+.white{
+    background-color:white;
 }
 .blue {
     background-color: #206EFF;
@@ -237,13 +249,13 @@ header {
     background-position: center;
     overflow-x: hidden; 
     overflow-y:hidden;
-    background: linear-gradient(271deg, #241881, #bac8e3);
+    background: linear-gradient(271deg, #150974, #bac8e3);
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 6s ease infinite;
-    -moz-animation: AnimationName 6s ease infinite;
-    -o-animation: AnimationName 6s ease infinite;
-    animation: AnimationName 6s ease infinite;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    -o-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
    .cloud{
         position: absolute;
     width: 100%;
