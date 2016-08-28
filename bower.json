@@ -24,17 +24,18 @@
     "animate.css": "~3.3.0",
     "jquery.easing": "~1.3.1",
     "jquery-fittext": "*",
-    "wowjs":"~1.1.2",
-     "please-wait": "*" ,
-     "animejs":"*"
+    "wowjs": "~1.1.2",
+    "please-wait": "*",
+    "animejs": "*",
+    "sine-waves": "^0.3.0"
   },
   "overrides": {
-  "bootstrap": {
-    "main": [
-      "dist/js/bootstrap.js",
-      "dist/css/bootstrap.css",
-      "less/bootstrap.less"
-        ]
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
     }
-}
+  }
 }
