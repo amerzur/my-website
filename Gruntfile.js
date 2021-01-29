@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
-
+    const sass = require('node-sass');
     // Project configuration.
     grunt.initConfig({
         wiredep: {
@@ -144,6 +144,7 @@ module.exports = function (grunt) {
 
         sass: {
             options: {
+                implementation: sass,
                 sourceMap: true
             },
             dist: {

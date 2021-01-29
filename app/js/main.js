@@ -1,3 +1,4 @@
+
 (function() {
     "use strict"; // Start of use strict
 
@@ -54,8 +55,7 @@ var moonAni = anime({
   duration: 500  ,
   autoplay:false
 });
-debugger;
- setTimeout(function(){
+  setTimeout(function(){
   moonAni.play();
  },4000);
 
@@ -170,9 +170,7 @@ set1: [
   }
 });
  }
-    /*
-     * Demo of https://github.com/isuttell/sine-waves
-     */
+     
    
   
 var skillsNotRenderd=true; ; 
@@ -225,7 +223,7 @@ new WOW().init();
 anime({
   targets: '.skill[data-skill="html"]',
     delay: 80,
-  width: '80%',  
+  width: '85%',  
   borderRadius: '8px',
   duration: 1000,
   loop:false 
@@ -233,14 +231,21 @@ anime({
 anime({
   targets: '.skill[data-skill="javascript"]',
    easing:'easeOutElastic',
-  width: '85%',  
+  width: '90%',  
    borderRadius: '8px',
   duration: 2000,
   loop:false 
 });
 anime({
   targets: '.skill[data-skill="css"]',
-  width: '70%', 
+  width: '80%', 
+   borderRadius: '8px',
+  duration: 3000,
+  loop:false 
+});
+anime({
+  targets: '.skill[data-skill="react"]',
+  width: '80%', 
    borderRadius: '8px',
   duration: 3000,
   loop:false 
