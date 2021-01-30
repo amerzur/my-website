@@ -54,22 +54,22 @@ background-image: url(../img/react.png);
 
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes ChangeBackgroundColor {
     0%{background-position:0% 50%}
     50%{background-position:100% 51%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes ChangeBackgroundColor {
     0%{background-position:0% 50%}
     50%{background-position:100% 51%}
     100%{background-position:0% 50%}
 }
-@-o-keyframes AnimationName {
+@-o-keyframes ChangeBackgroundColor {
     0%{background-position:0% 50%}
     50%{background-position:100% 51%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName { 
+@keyframes ChangeBackgroundColor { 
     0%{background-position:0% 50%}
     50%{background-position:100% 51%}
     100%{background-position:0% 50%}
@@ -256,13 +256,13 @@ header {
     background-position: center;
     overflow-x: hidden; 
     overflow-y:hidden;
-    background: linear-gradient(271deg, #150974, #bac8e3);
+    background: linear-gradient(271deg,$accent, #2f6ce8);
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 3s ease infinite;
-    -moz-animation: AnimationName 3s ease infinite;
-    -o-animation: AnimationName 3s ease infinite;
-    animation: AnimationName 3s ease infinite;
+    -webkit-animation: ChangeBackgroundColor 3s ease infinite;
+    -moz-animation: ChangeBackgroundColor 3s ease infinite;
+    -o-animation: ChangeBackgroundColor 3s ease infinite;
+    animation: ChangeBackgroundColor 3s ease infinite;
    .cloud{
         position: absolute;
     width: 100%;
