@@ -157,12 +157,14 @@
   });
 
   //shake animatoin on skill bar clicked
-  $(".skill").bind("click", function(event) {
+  $(".skill").bind("mouseover", function(event) {
      var skill = $(this).data("skill");
-    var animation = anime({
+     anime({
       targets: '.skill[data-skill="' + skill + '"]',
       duration: 1000,
        loop: false,
+       easing: "easeOutElastic",
+
       translateX: [
         {
           value: -1
@@ -194,9 +196,43 @@
         {
           value:0
         }
+      ],
+      translateY: [
+        {
+          value: -1
+        },
+        {
+          value: 2
+        },
+        {
+          value: -2
+        },
+        {
+          value: 2
+        },
+        {
+          value: -2
+        },
+        {
+          value: 2
+        },
+        {
+          value: -2
+        },
+        {
+          value: 2
+        },
+        {
+          value: -1
+        },
+        {
+          value:0
+        }
       ]
+          
     });
-    animation.play();
+    
+    
      
   });
   // jQuery for page scrolling feature - requires jQuery Easing plugin
