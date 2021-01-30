@@ -1,6 +1,5 @@
 (function() {
   "use strict"; // Start of use strict
-   
 
   //Collect clicks in the page
   $(document).click(function(loc) {
@@ -25,8 +24,8 @@
       loop: true,
       duration: 500
     });
-     
-   /* var waves = new SineWaves({
+
+    /* var waves = new SineWaves({
       // Canvas Element
       el: document.getElementById("waves"),
 
@@ -134,18 +133,17 @@
       }
     }); */
   };
- 
 
   var skillsNotRenderd = true;
   var loadingScreen = pleaseWait({
     logo: "../img/loading.png",
     backgroundColor: "#7166f5",
     loadingHtml:
-      "<div align='center' class='  animation-parent '> <div class=' animation blue'></div><div class=' animation red'></div><div class=' animation green'></div></div> "
+      "<div align='center' class='animation-parent'> <div class='animation blue'></div><div class='animation red'></div><div class=' animation green'></div></div> "
   });
 
   setTimeout(function() {
-     loadingScreen.finish();
+    loadingScreen.finish();
   }, 3000);
   // initialize wow sliders
 
@@ -158,6 +156,49 @@
     }
   });
 
+  //shake animatoin on skill bar clicked
+  $(".skill").bind("click", function(event) {
+     var skill = $(this).data("skill");
+    var animation = anime({
+      targets: '.skill[data-skill="' + skill + '"]',
+      duration: 1000,
+       loop: false,
+      translateX: [
+        {
+          value: -1
+        },
+        {
+          value: 2
+        },
+        {
+          value: -4
+        },
+        {
+          value: 4
+        },
+        {
+          value: -4
+        },
+        {
+          value: 4
+        },
+        {
+          value: -4
+        },
+        {
+          value: 2
+        },
+        {
+          value: -1
+        },
+        {
+          value:0
+        }
+      ]
+    });
+    animation.play();
+     
+  });
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $("a.page-scroll").bind("click", function(event) {
     var $anchor = $(this);
@@ -191,7 +232,7 @@
         borderRadius: "8px",
         duration: 1000,
         loop: false,
-        backgroundColor:'#e66767'
+        backgroundColor: "#e66767"
       });
       anime({
         targets: '.skill[data-skill="javascript"]',
@@ -200,7 +241,7 @@
         borderRadius: "8px",
         duration: 2000,
         loop: false,
-        backgroundColor:'#e8d057'
+        backgroundColor: "#e8d057"
       });
       anime({
         targets: '.skill[data-skill="css"]',
@@ -208,7 +249,7 @@
         borderRadius: "8px",
         duration: 3000,
         loop: false,
-        backgroundColor:'#d666d8'
+        backgroundColor: "#d666d8"
       });
       anime({
         targets: '.skill[data-skill="react"]',
@@ -216,7 +257,7 @@
         borderRadius: "8px",
         duration: 3000,
         loop: false,
-        backgroundColor:'#6aceec'
+        backgroundColor: "#6aceec"
       });
       anime({
         targets: '.skill[data-skill="vue"]',
@@ -224,7 +265,7 @@
         borderRadius: "8px",
         duration: 3500,
         loop: false,
-        backgroundColor:'#61e2a7'
+        backgroundColor: "#61e2a7"
       });
       anime({
         targets: '.skill[data-skill="wordpress"]',
