@@ -4,14 +4,18 @@
   "description": "My personal website.",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+  "postinstall": "bash ./post_install.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amera7md/my-website.git"
   },
   "keywords": [
-    "website","amer zureigat","frontend"
+    "website",
+    "amer zureigat",
+    "frontend"
   ],
   "author": "Amer Zureigat",
   "license": "MIT",
@@ -37,5 +41,8 @@
     "load-grunt-tasks": "^3.1.0",
     "node-sass": "*",
     "time-grunt": "^1.2.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.12"
   }
 }
