@@ -139,13 +139,13 @@
   var skillsNotRenderd = true;
   var loadingScreen = pleaseWait({
     logo: "../img/loading.png",
-    backgroundColor: "#bac8e3",
+    backgroundColor: "#7166f5",
     loadingHtml:
-      "<div class='row animation-container'> <div class='col-xs-2 col-xs-offset-5 animation-parent '> <div class=' animation blue'></div><div class=' animation red'></div><div class=' animation green'></div></div></div> "
+      "<div align='center' class='  animation-parent '> <div class=' animation blue'></div><div class=' animation red'></div><div class=' animation green'></div></div> "
   });
 
   setTimeout(function() {
-    loadingScreen.finish();
+     loadingScreen.finish();
   }, 3000);
   // initialize wow sliders
 
@@ -219,6 +219,14 @@
         backgroundColor:'#6aceec'
       });
       anime({
+        targets: '.skill[data-skill="vue"]',
+        width: "70%",
+        borderRadius: "8px",
+        duration: 3500,
+        loop: false,
+        backgroundColor:'#61e2a7'
+      });
+      anime({
         targets: '.skill[data-skill="wordpress"]',
         width: "65%",
         borderRadius: "8px",
@@ -229,10 +237,10 @@
   });
 
   // Fit Text Plugin for Main Header
-  $("h1").fitText(1.2, {
+  /* $("h1").fitText(1.2, {
     minFontSize: "30px",
     maxFontSize: "60px"
-  });
+  }); */
 
   // Closes the Responsive Menu on Menu Item Click
   $(".navbar-collapse ul li a").click(function() {
