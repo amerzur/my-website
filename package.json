@@ -44,5 +44,8 @@
   },
   "dependencies": {
     "bower": "^1.8.12"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
