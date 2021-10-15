@@ -2,7 +2,7 @@
 *.css.map
 *.sass-cache/
 *.DS_Store
-
+.github/workflows/
 #compiled css
 *main.css
 .tmp
